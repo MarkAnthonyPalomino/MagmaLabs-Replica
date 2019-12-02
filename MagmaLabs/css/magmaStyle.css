@@ -1,0 +1,221 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+#magmalabs-section1{
+    height: 100vh;
+}
+#magmalabs-section1:before{
+    content: '';
+    top: 0;
+    position: absolute;
+    background-image: url("../images/fondoSeccion1.jpg");
+    width: 100%;
+    height: 100%;
+    filter: sepia(100%) brightness(30%) hue-rotate(300deg);
+    z-index: -1;
+}
+
+.mobile-logo{
+    display: none;
+}
+
+.navbar{
+    position: absolute;
+    display: flex;
+    position: sticky;
+    top: 0;
+}
+
+.magmalabs-logo{
+    display: flex;
+    width: 50%;
+    height: 13vh;
+    align-items: flex-end;
+}
+
+.magmalabs-navegation{
+    display: flex;
+    width: 50%;
+    height: 15vh;
+    align-items: flex-end;
+}
+
+.magmalabs-navegation a{
+    color: white;
+    padding: 3%;
+    font-size: 15px;
+}
+
+.magmalabs-navegation a:hover:not(#magmalabs-contact){
+    transition: 0.2s;
+    border-top: 5px solid #f84848;
+    font-weight: bold;
+}
+
+#magmalabs-contact{
+    color: #f84848;
+}
+
+#magmalabs-contact:hover{
+    color: white;
+    transition: 0.2s;
+    background-color: #f84848;
+    font-weight: bold;
+}
+
+.magmalabs-headers{
+    margin: 15vmin;
+    text-align: center;
+    color: #f84848;
+}
+
+.magmalabs-headers h1{
+    font-weight: lighter;
+    font-size: 7.5vh;
+    padding-bottom: 20px;
+}
+.magmalabs-headers h2{
+    color: white;
+    font-weight: lighter;
+    font-size: 20px;
+}
+
+.magmalabs-tools{
+    display: flex;
+    justify-content: center;
+}
+.magmalabs-tools p{
+    color: white;
+    padding: 1%;
+    padding-bottom: 5%;
+}
+
+.magmalabs-us{
+    display: flex;
+    justify-content: center;
+}
+.magmalabs-us a:hover{
+    background: url("../images/know-us-r.png");
+}
+
+#magmalabs-section2 h3{
+    padding: 5%;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 4vmin;
+}
+
+.digital-products{
+    display: flex;
+}
+
+.magmalabs-product{
+    width: 25%;
+}
+.magmalabs-product img{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 70%;
+    height: 30%;
+}
+
+.product-info{
+    text-align: center;
+    font-weight: lighter;
+}
+.product-info h4,.product-info p{
+    margin: 10%;
+}
+.product-info a{
+    padding: 10%;
+    color: #f84848;
+}
+.product-info a:hover{
+    font-weight: bold;
+}
+
+#magmalabs-section3{
+    background-color: #f6f6f6;
+}
+
+.section3-part1, .section3-part2{
+    text-align: center;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+.section3-part1 h3{
+    padding-top: 10%;
+    font-weight: lighter;
+    font-size: 4vmin;
+}
+.section3-part1 img{
+    padding: 5%;
+}
+.section3-part1 p{
+    padding: 5%;
+}
+
+.section3-part2 h4{
+    padding: 5%;
+}
+.section3-part2 img{
+    padding: 5%;
+}
+.section3-part2 button{
+    font-size: 2.3vmin;
+    font-weight: bold;
+    border: none;
+    color: white;
+    background-color: #f84848;
+    border-radius: 5px;
+    margin: 5%;
+    padding: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.section3-part2 button:hover{
+    background-color: #cb3737;
+}
+
+@media only screen and (max-width: 320px){
+    .magmalabs-headers h1{
+        font-size: 5vw;
+    }
+
+    .magmalabs-headers h2{
+        font-size: 3vw;
+    }
+
+    .magmalabs-tools{
+        font-size: 2.5vw;
+    }
+
+    .navbar{
+        display: none;
+        justify-content: center;
+    }
+
+    .mobile-logo{
+        display: flex;
+        justify-content: center;
+        padding-top: 10%;
+    }
+
+    .magmalabs-us{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    .magmalabs-us a:hover{
+        background: url("../images/know-us-r.png");
+    }
+}
